@@ -12,3 +12,10 @@ repositories {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib"
 }
+
+task("execCommand") {
+
+    doLast {
+        Runtime.getRuntime().exec("cmd.exe envman add --key TEST --value 12345")
+    }
+}
