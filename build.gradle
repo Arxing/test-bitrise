@@ -16,6 +16,6 @@ dependencies {
 task("execCommand") {
 
     doLast {
-        Runtime.getRuntime().exec("cmd.exe envman add --key TEST --value 12345")
+        Runtime.getRuntime().exec("envman add --key TEST --value 12345")
     }
 }
